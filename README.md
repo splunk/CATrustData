@@ -6,6 +6,15 @@ Security relies on trust, especially when it comes to Certificate Authorities. B
 
 This repo is a companion to David Bianco's 2023 RSA talk, "[Trust Unearned? Evaluating CA Trustworthiness Across 5 Billion Certificates](https://www.rsaconference.com/USA/agenda/session/Trust%20Unearned%20Evaluating%20CA%20Trustworthiness%20Across%202%20Billion%20Certificates)". It contains the raw risk rankings for all root CAs and the top 10k issuing CAs we encountered in our research.
 
+## How did we compile this data?
+It's simple:
+
+* We downloaded about 5 billion TLS certificates used for WebPKI (think, HTTPS websites) from 15 separate Certificate Transparency Logs (CTL)s. This gave us the bulk of all the TLS certificates issued during 2021 and 2022, plus some older ones, a few going back as far as 2015.
+* We partnered with some threat intelligence companies and private CTI providers to get a very large list of ~185m malicious domains and FQDNs
+* We threw all this data into Splunk and analyzed it!
+
+Ok, it wasn't actually *quite* so straightforward, but this was the general idea.
+
 ## What does the data look like?
 The risk rankings are distributed in the form of two CSV files:
 
