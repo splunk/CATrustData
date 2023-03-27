@@ -42,5 +42,5 @@ Each file contains one record per root/issuing CA we encountered in our dataset.
 ## How should I use this data?
 That's up to you! We think this would be a great start to a risk-based approach to alerting or hunting (RBA or RBH). Our findings don't support directly alerting on certificates just because they happen to be issued or anchored by any of these CAs, but if used in combination with other factors or as part of an RBA/RBH strategy, these scores can be very helpful.
 
-Please note, however, that **this is a point-in-time snapshot** and will become increasingly unreliable as time goes on. We feel that this is good data right now (Spring 2023), but *downloadeat emptor*. 
+Please note, however, that **this is a point-in-time snapshot** and will become increasingly unreliable as time goes on. We feel that this is good data right now (Spring 2023), but *downloadeat emptor*. USE THIS FOR PRODUCTION SECURITY OPERATIONS AT YOUR OWN RISK.
 
