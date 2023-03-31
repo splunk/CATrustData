@@ -4,7 +4,7 @@ Analysis &amp; results from the SURGe Certificate Authority Trustworthiness proj
 ## What is this repo?
 Security relies on trust, especially when it comes to Certificate Authorities. Browsers ship with many root CAs built in, but are they all equally trustworthy? Splunk's SURGe research team examined over 5 billion recent TLS certificates used for secure web sites (WebPKI) to try to find the answer to this question.  
 
-This repo is a companion to David Bianco's 2023 RSA talk, "[Trust Unearned? Evaluating CA Trustworthiness Across 5 Billion Certificates](https://www.rsaconference.com/USA/agenda/session/Trust%20Unearned%20Evaluating%20CA%20Trustworthiness%20Across%202%20Billion%20Certificates)". It contains the raw risk rankings for all root CAs and the top 10k issuing CAs we encountered in our research.
+This repo is a companion to David Bianco's 2023 RSA talk, "[Trust Unearned? Evaluating CA Trustworthiness Across 5 Billion Certificates](https://www.rsaconference.com/USA/agenda/session/Trust%20Unearned%20Evaluating%20CA%20Trustworthiness%20Across%202%20Billion%20Certificates)" [[slides](trust_unearned_evaluating_CA_trustworthiness_across_5_billion_certificates.pdf)]. It contains the raw risk rankings for all root CAs and the top 10k issuing CAs we encountered in our research.
 
 ## How did we compile this data?
 It's simple:
